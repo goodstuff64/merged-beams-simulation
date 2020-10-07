@@ -245,15 +245,3 @@ def MN(N,m1,m2,E1_avg,E2_avg,EK,BR,potentialsamples=None,L_start=1.166,L_stop=2.
     ECOM_SAVE = ECOM[hit]
 
     return Y_A,Y_B,Z_A,Z_B,delta_t,ECOM_SAVE,alpha,N_new,np.sum(hit)#,xsec,ECOM,acceptlimit
-
-def crossection2(E,cutoff=1):
-    if E < cutoff:
-        return 1
-    else:
-        return 1/np.sqrt(E)*np.sqrt(cutoff)
-
-
-
-if __name__ == "__main__":
-    main()
-
