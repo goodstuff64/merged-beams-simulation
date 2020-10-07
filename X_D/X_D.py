@@ -18,6 +18,7 @@ def r_simple(ek,ecm,vcm,mu,L):
 
 # ------------- INPUT PARAMETERS ---------
 N = 5000000 # number of simulation events
+N = 50000
 l = 1.683 # flight distance from center interaction region -> detector
 # DT = .244 # length of interaction region
 R = 0.075*1e3*.5 # detector radius
@@ -35,7 +36,7 @@ E1_sigma = 0.0015  # beam 1 relative energy spread
 E2_sigma = 0.0015 #beam 2 relative energy spread 
 T = 900 # Transversal ion beam temperature
 
-atom = 'Rb' # Select collision partner
+atom = 'Li' # Select collision partner
 T_cm = 1000 # Collisional temperature selects br
 
 dt_max = 200 # Only analyze events with delta t less than this number [ns]
@@ -146,7 +147,7 @@ fig.tight_layout()
 
 
 
-YA,YB,ZA,ZB,dt,ECOM,angles,accepted,hits = mc.MN(N,m1,m2,E1,E2,ker,br,potentialdata,l=l,DTV=DTV+DTV_offset,
+YA,YB,ZA,ZB,dt,ECOM,angles,accepted,hits = mc.MN(N,m1,m2,E1,E2,ker,br,potentialdata,DTV=DTV+DTV_offset,
 potentiallimit=.5,usematch=usematch,alpha=alpha,E1_sigma=E1_sigma,E2_sigma=E2_sigma,T=T,xsec_cutoff=.05)
 
 dt = abs(dt)
