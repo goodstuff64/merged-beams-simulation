@@ -1,0 +1,36 @@
+------- Running O --------
+Number of simulation events : 5000000
+Ion masses 1 : 15.9994
+Ion masses 2 : 2.0141017778
+Mass ratio m1/m2 : 7.9436899248835955
+Beam 1 energy : 49345.24652676665
+Beam 2 energy : 7000
+Collisional temperature : 1000
+Beam 1 energy spread (gaussian sigma) : 0.0015
+Beam 2 energy spread (gaussian sigma) : 0.0015
+Transversal beam temperature : 900
+Drift tube voltage for match  : -700
+Drift tube voltage offset : 0
+Detector radius : 37.5
+Potentialdata : potential_4.txt
+Flight distance center interaction to detector : 1.683
+Maximum delta t : 70
+State, KER [eV], BR, estimated r [mm]
+-----------------
+3s.5So 3.727464 0.0 43.94938028790527
+3s.3So 3.352164 0.0 41.732135952310145
+2p4.3P_H* 2.665044 0.0 37.332975148797196
+3p.5P 2.132904 3.16 33.53180237258591
+3p.3P 1.884687 25.75 31.602758221976604
+4s.5So 1.035892 40.32 23.85527836857185
+4s.3So 0.943151 16.77 22.85013813294963
+3d.5Do 0.794866 8.48 21.14395769619484
+3d.3Do 0.786435 4.91 21.042793895678557
+4p.5P 0.587441 0.56 18.495091618208164
+4p.3P 0.514662 0.04 17.470766578349515
+-----------------
+Accepted events: 432855
+Number of hits on detector 337623
+Average ECM: 0.25037210220661826
+Median ECM: 0.08831644800481761
+
